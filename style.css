@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(50, 44, 44, 0.8);
+}
+
+.calculadora {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+    background-color: #215C53;
+    user-select: none;
+}
+
+.calculadora .operacao img {
+    max-width: 18%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+.operacao{
+    background-color:#178F7D; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.operacao:hover{
+    background-color:#178f7d94; 
+    transition: background-color 0.3s ease;
+    
+}
+
+.numero{
+    background-color: rgb(162, 189, 161);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.numero:hover{
+    background-color: rgba(162, 189, 161, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.visor{
+   display: flex;
+   margin: 10px;
+   justify-content: center;
+}
+
+.visor_conteudo{
+    width: 50vh;
+    padding: 0 10px;
+    height: 6vh;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+}
+
+.botoes{
+    margin: 30px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    text-align: center;
+}
+
+.botoes div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+#number_0{
+    grid-column: 2;
+}
+
+.operacoes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.operacoes div{
+    flex: 1;
+    text-align: center;
+}
